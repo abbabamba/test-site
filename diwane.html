@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriConline Innovation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   </head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <a href="#" id="logo"><img src="images/logo.jpg" alt="" style="width:50px;"></a>
+            <button class="menu-button" id="menu-button">Menu</button>
+            <nav class="navbar">
+              <div id="close-navbar" class="fas fa-times"></div>
+                <a href="#accueil">Accueil</a>
+                <a href="#services">Nos Services</a>
+                <a href="#propos">À Propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="icons" >
+              <div id="menu-btn" class="fas fa-bars"></div>
+           </div>
+        
+          </header>
+          <script>
+            let navbar = document.querySelector('.header .navbar');
+            let menuLinks = document.querySelectorAll('.navbar a');
+   
+            document.querySelector('#menu-btn').onclick = () => {
+               navbar.classList.add('active');
+            };
+   
+            document.querySelector('#close-navbar').onclick = () => {
+               navbar.classList.remove('active');
+            };
+   
+            // Ajoutez un gestionnaire d'événements pour les liens du menu
+            menuLinks.forEach((link) => {
+               link.addEventListener('click', () => {
+                  // Masquez le menu en supprimant la classe 'active'
+                  navbar.classList.remove('active');
+               });
+            });
+         </script>
+     
+        <div class="background-text">
+            <div class="main">
+                <h2>Transformons vos idées en réalité technologique.</h2>
+                <p>Offrant une gamme complète de services en technologies de l'information et de la communication.</p>
+                <a href="#plus" class="first-btn">En savoir plus</a>
+                <a href="#decouverte" class="second-btn">Découvrez nos services</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="world-map">
+        <div class="main-map">
+            <div class="inner-map">
+                <h2 id="plus">Exploitez votre potentiel grâce à la technologie.</h2>
+                <p id="propos">Nous sommes déterminés à vous aider à réaliser votre plein potentiel grâce à l'utilisation judicieuse de la technologie. Chez AfriConline Innovation, nous croyons que chaque idée créative a le potentiel de devenir une réalité technologique innovante.</p>
+                <p>Que vous soyez une entreprise établie cherchant à optimiser vos opérations ou une start-up avec une vision audacieuse, nous sommes là pour vous accompagner à chaque étape de votre parcours technologique.</p>
+                <p>Nos experts en technologies de l'information et de la communication sont prêts à collaborer avec vous pour concevoir des solutions sur mesure qui répondent à vos besoins spécifiques. Que vous ayez besoin de développement de logiciels, de sécurisation de votre présence en ligne, de développement d'applications mobiles, de conception de sites web ou de services téléphoniques, nous avons l'expertise nécessaire pour vous guider vers le succès.</p>
+                <a href="#servir" class="map-btn">Découvrez nos services</a>
+            </div>
+            
+            <div class="inner-map image-row">
+                <img src="images/tech1.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="africonline">
+      <div class="main-afri">
+          <div class="loufinek blue">
+              <img src="images/expert.jpg" alt="" style="width: 200px; height: 100px;">
+              <h2>20+</h2>
+              <h3>Experts hautement qualifiés</h3>
+              <p>Nos professionnels qualifiés vous offrent des solutions technologiques de pointe.</p>
+          </div>
+  
+          <div class="loufinek red">
+              <img src="images/reussi.jpg" alt="" style="width: 200px; height: 100px;">
+              <h2>50+</h2>
+              <h3>Projets réussis</h3>
+              <p>Nous avons une solide expérience dans la gestion de projets technologiques réussis.</p>
+          </div>
+  
+          <div class="loufinek pink">
+              <img src="images/support.jpeg" alt="" style="width: 200px; height: 100px;">
+              <h2>24/7</h2>
+              <h3>Support technique</h3>
+              <p>Notre équipe de support technique est disponible 24/7 pour répondre à vos besoins.</p>
+          </div>
+      </div>
+  </div>
+  
+  
+  <div class="background-image">
+      <div class="background-image-text">
+          <h2>Exploitez le potentiel infini de la technologie.</h2>
+          <p>Nous sommes engagés à fournir des solutions technologiques innovantes pour votre entreprise.</p>
+      </div>
+  </div>
+  
+    <div class="offre-section" style="background-image: url(images/back\ service.jpg); ;">
+        <div class="main-offres">
+            <div class="intro-offre" id="services">
+               <u> <h2 id="servir"> Explorez le monde de la technologie avec nous.</h2></u>
+                <p>Notre expertise couvre une gamme complète de services en TIC pour répondre à vos besoins.</p>
+                <div class="intro-offre-main">
+                  <div id="services-container">
+                    <div class="cas-offre" >
+                        <img src="images/loogiciel.jpg" alt="" >
+                        <h2>Conception de logiciels sur mesure</h2>
+                        <p>Nous créons des solutions logicielles personnalisées pour votre entreprise.</p>
+                    </div>
+                    <div class="cas-offre">
+                        <img src="images/sec.jpg" alt="">
+                        <h2>Sécurisation avancée des sites web</h2>
+                        <p>Nous assurons la sécurité de votre présence en ligne grâce à des techniques avancées.</p>
+                    </div>
+                  
+                    <div class="cas-offre" style="margin-left: 0%;margin-right: 0%;">
+                        <img src="images/mobile.jpg" alt="">
+                        <h2>Développement d'applications mobiles</h2>
+                        <p>Nos développeurs créent des applications mobiles innovantes pour votre entreprise.</p>
+                    </div>
+                    <div class="cas-offre" id="decouverte" style="margin-left: 0%;margin-right: 0%;">
+                        <img src="images/site.jpeg" alt="">
+                        <h2>Conception de sites web</h2>
+                        <p>Nous concevons des sites web attrayants et conviviaux pour votre entreprise.</p>
+                    </div>
+                    <div class="cas-offre" style="margin-left: 0%;margin-right: 0%;">
+                        <img src="images/tele.jpg" alt="">
+                        <h2>Installation de services téléphoniques</h2>
+                        <p>Nous fournissons des solutions de téléphonie pour votre entreprise.</p>
+                    </div>
+                    <div class="cas-offre" style="margin-left: 0%;margin-right: 0%;">
+                        <img src="images/auto.jpg" alt="">
+                        <h2>Automatisation des tâches grâce à l'IA</h2>
+                        <p>Nous utilisons l'intelligence artificielle pour automatiser les processus commerciaux.</p>
+                    </div>
+                    <div class="cas-offre" style="margin-left: 0%;margin-right: 0%;" >
+                        <img src="images/codeurs.jpg" alt="">
+                        <h2>Codeurs à temps partiel</h2>
+                        <p>Nous mettons à disposition des codeurs qualifiés pour répondre à vos besoins.</p>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>     
+        </div>
+    </div>
+    <script>
+      const servicesContainer = document.getElementById('services-container');
+      const services = document.querySelectorAll('.cas-offre');
+      let currentIndex = 0;
+
+      function afficherService(index) {
+          services[index].style.opacity = 1; // Afficher le service actuel
+      }
+
+      function masquerService(index) {
+          services[index].style.opacity = 0; // Masquer le service actuel
+      }
+
+      setInterval(() => {
+          masquerService(currentIndex); // Masquer le service actuel
+          currentIndex = (currentIndex + 1) % services.length;
+          afficherService(currentIndex); // Afficher le service suivant
+      }, 3000); // Change de service toutes les 3 secondes
+
+      // Afficher le premier service au chargement de la page
+      afficherService(currentIndex);
+  </script>
+    <form id="emailForm" style="display: none;">
+
+
+
+      <div class="formulaire">
+        <div class="form-group">
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" placeholder="Votre prénom" required>
+        </div>
+        <div class="form-group">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="adresse">Adresse :</label>
+          <input type="text" id="adresse" placeholder="Votre adresse">
+        </div>
+        <div class="form-group">
+          <label for="telephone">Numéro de téléphone :</label>
+          <input type="tel" id="telephone" placeholder="Votre numéro de téléphone" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" rows="5" placeholder="veuillez nous écrire ici" required></textarea>
+        </div>
+        <div class="button">
+        <center><button type="submit" class="btn btn-success" >Envoyer</button></center><br>
+      </div>
+      </div>
+      </form>
+      <div id="errorContainer" class="error-message"></div>
+      <div id="backToTopButton"> Menu</div>
+      <script>
+        // Sélectionnez le bouton en utilisant son ID
+        var backToTopButton = document.getElementById('backToTopButton');
+    
+        // Ajoutez un gestionnaire d'événement pour le défilement de la page
+        window.addEventListener('scroll', function() {
+            // Si la position de défilement est supérieure à une certaine valeur (par exemple, 300 pixels),
+            // affichez le bouton, sinon masquez-le
+            if (window.pageYOffset > 2000) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    
+        // Ajoutez un gestionnaire d'événement pour le clic sur le bouton
+        backToTopButton.addEventListener('click', function() {
+            // Faites défiler la page vers le haut lorsque le bouton est cliqué
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Pour une animation de défilement en douceur
+            });
+        });
+    </script>
+    
+      <footer>
+        <div id="contact" class="footer-section">
+            <button id="showFormButton" class="green-button">Envoyer un message</button>
+        </div>
+        <div class="social-icons footer-section">
+            <a href="https://api.whatsapp.com/send?phone=+221772274883" class="iconwhatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="iconinstagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="iconfacebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+    
+    
+     <script>// JavaScript
+      var to = "bintourassoulfall42@gmail.com";
+      var subject = "Africonlie - Veuillez lire votre message";
+      
+      document.getElementById('emailForm').addEventListener('submit', function (e) {
+        e.preventDefault(); // Empêcher la soumission par défaut du formulaire
+      
+        var prenom = document.getElementById('prenom').value;
+        var nom = document.getElementById('nom').value;
+        var adresse = document.getElementById('adresse').value;
+        var telephone = document.getElementById('telephone').value;
+        var message = "Prénom : " + prenom + "\nNom : " + nom + "\nAdresse : " + adresse + "\nNuméro de téléphone : " + telephone + "\n\n" + document.getElementById('message').value;
+      
+        fetch('https://codingmailer.onrender.com/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            to: to,
+            subject: subject,
+            message: message
+          })
+        })
+          .then(function (response) {
+            if (response.ok) {
+              alert('E-mail envoyé avec succès.'); // Affiche la notification de succès
+              // Réinitialiser les champs du formulaire
+              document.getElementById('prenom').value = '';
+              document.getElementById('nom').value = '';
+              document.getElementById('adresse').value = '';
+              document.getElementById('telephone').value = '';
+              document.getElementById('message').value = '';
+              document.getElementById('errorContainer').textContent = ''; // Effacer le message d'erreur précédent
+            } else {
+              response.json().then(function (data) {
+                var errorMessage = data && data.message ? data.message : 'Erreur lors de l\'envoi de l\'e-mail.';
+                document.getElementById('errorContainer').textContent = 'Erreur : ' + errorMessage;
+              });
+            }
+          })
+          .catch(function (error) {
+            console.log('Erreur lors de la requête :', error);
+            document.getElementById('errorContainer').textContent = 'Erreur lors de la requête : ' + error;
+          });
+      });
+      // Récupérez le bouton et le formulaire par leur ID
+var showFormButton = document.getElementById('showFormButton');
+var emailForm = document.getElementById('emailForm');
+
+// Ajoutez un gestionnaire d'événement au bouton
+showFormButton.addEventListener('click', function() {
+  // Modifiez le style du formulaire pour l'afficher
+  emailForm.style.display = 'block';
+  // Masquez le bouton
+  showFormButton.style.display = 'none';
+});
+document.getElementById('emailForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Empêchez la soumission du formulaire par défaut
+  this.reset();
+  // Masquez le formulaire
+  this.style.display = 'none';
+  // Affichez à nouveau le bouton
+  showFormButton.style.display = 'block';
+});
+
+      </script>
+    
+</body>
+</html>

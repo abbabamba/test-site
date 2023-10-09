@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --btnclr:#f42267;
+    --sectionclr:#4b2d7f;
+    --sectionclrsec:#40286a;
+    --boxshadow:#ff5990;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: backgroundScroll 20s linear infinite;
+}
+
+.form-group{
+    grid-area: form-group;
+    width: 700px;
+    font-family: 'Times New Roman', Times, serif;
+    /*text-align: center;*/
+    font-size:small;
+    margin-left: 400px;
+    margin-bottom: 20px;
+} 
+
+.formulaire{
+    border: 2px solid rgb(156, 152, 152);
+    margin: 100px;
+    margin-left: 80px;
+    margin-right: 140px;
+    background-color: #f7f4f4;
+    padding: 40px;
+    border-radius: 10px;
+   
+}
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+
+.button{
+    width: 1000px;
+    text-align: center;
+ }
+@keyframes backgroundScroll {
+    0% {
+        background-image: url(images/tech.jpg);
+    }
+    25% {
+        background-image: url(images/tech2.jpg);
+    }
+    35% {
+        background-image: url(images/tech1.jpeg);
+    }
+    50% {
+        background-image: url(images/tech3.jpg);
+    }
+    62.5% {
+        background-image: url(images/tech6.jpeg);
+    }
+    75% {
+        background-image: url(images/tech4.jpg);
+    }
+    100% {
+        background-image: url(images/tech5.jpg);
+    }
+}
+
+/* Ajout d'un padding plus important pour le menu */
+.header {
+    padding: 1rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+/* Redimensionnez le logo */
+.header #logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Ajout d'un espacement pour les liens de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Styles pour les liens de navigation (a) */
+.navbar a {
+    background-color: rgb(60, 221, 250);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Style au survol des liens */
+.navbar a:hover {
+    background-color: rgb(255, 0, 119);
+    color: white;
+    font-size: 15px;
+    border-color: beige;
+    border-radius: 30px;
+}
+
+/* Style pour le lien actif */
+.navbar a.active {
+    background-color: var(--btnclr);
+    border-color: var(--btnclr);
+    border-radius: 30px;
+}
+
+  
+
+
+.background-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 50%;
+}
+.main h2{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.main p{
+    color: white;
+    font-size: 1.5rem;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.main a{
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+
+/* Styles pour le premier bouton */
+.first-btn {
+    background-color: rgb(255, 0, 119); 
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.first-btn:hover {
+    background-color:  rgb(60, 221, 250); 
+}
+
+/* Styles pour le deuxième bouton */
+.second-btn {
+    background-color: rgb(255, 0, 119);
+    color: var(--btnclr);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.second-btn:hover {
+    background-color:  rgb(60, 221, 250); 
+    color: white;
+}
+
+
+
+/* Styles pour la section "Exploitez votre potentiel grâce à la technologie" */
+.world-map {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.main-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner-map {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.inner-map h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+.inner-map p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.image-row img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles pour le bouton "Découvrez nos services" */
+.map-btn {
+    display: inline-block;
+    background-color: rgb(60, 221, 250); 
+    color: #ffffff; 
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 50px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Effets de transition au survol */
+}
+
+.map-btn:hover {
+    background-color:  rgb(255, 0, 119); 
+    color: #ffffff; 
+    transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+
+.image-row{
+    text-align: center;
+}
+/* Styles pour la section "Africonline" */
+.africonline {
+    background-image: url(images/service2.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.main-afri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 0 2rem;
+}
+
+.loufinek {
+    flex: 0 0 auto;
+    width: 300px;
+    background-image: url(images/footr.avif);
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.loufinek img {
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.loufinek h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 1rem;
+}
+
+.loufinek h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.loufinek p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.loufinek:hover {
+    transform: translateY(-10px); /* Effet de survol */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Ombre au survol */
+}
+
+
+.background-image {
+    background-image: url(images/service3.jpg); 
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-image-text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.background-image-text h2 {
+    color: white;
+    font-size: 40px;
+    padding: .5rem 4rem;
+}
+
+.background-image-text p {
+    color: white;
+    font-size: 1.5rem;
+    padding: .5rem 8rem;
+    margin-bottom: 25px;
+}
+
+
+
+.offre-section{
+    padding: 4rem 7%;
+}
+.main-offres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.intro-offre{
+    flex: 1 1 45rem;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background-color: #fff; /* Fond blanc */
+    text-align: center;
+    color: #333; /* Couleur du texte foncée */
+    padding: 100px 0;
+}
+.intro-offre img{
+    width: 70%;
+}
+.intro-offre h2{
+    margin-left: 10%;
+    padding: .5rem 4rem;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.intro-offre p{
+    margin-left: 13%;
+    font-size: 18px;
+}
+.intro-offre-text{
+    font-size: 1.5rem;
+    padding: .5rem 5rem !important;
+}
+.offre-section {
+    padding: 4rem 7%;
+    overflow: hidden; /* Masque le contenu débordant de la section */
+}
+
+.main-offres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Masque le contenu débordant de la zone visible */
+}
+
+.intro-offre-main {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.cas-offre {
+    width: 100%;
+    display: inline-block;
+    margin-left: 5%;
+    background-image: url(images/footr.avif);
+    white-space: normal;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transform: translateX(-50%); /* Centrer les éléments horizontalement */
+    opacity: 0; /* Masquer initialement les éléments */
+    transition: opacity 1s ease-in-out;
+}
+#services-container {
+    display: flex;
+}
+
+@keyframes floatServices {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); /* Services se déplacent complètement vers la droite */
+    }
+}
+
+.cas-offre img {
+    max-width: 100%;
+    height: auto;
+}
+.cas-offre h2,p{
+    padding: 0 !important;
+}
+.cas-offre h2{
+    font-size: 1.7rem;
+    padding-bottom: 10px !important;
+}
+.cas-offre p{
+    font-size: 1.5rem;
+}
+
+
+/* Styles CSS pour le formulaire */
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  
+  textarea {
+    resize: vertical; /* Permet de redimensionner verticalement uniquement */
+  }
+  
+  button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s; /* Animation de transition pour la couleur de fond */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555; 
+  }
+  
+ 
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Styles pour la notification de succès */
+  .success-message {
+    color: green;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+/* Styles pour le pied de page */
+footer {
+    background-image: url(images/footr.avif); 
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles pour le bouton "Envoyer un message" */
+.green-button {
+    background-color:  rgb(255, 0, 119); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.green-button:hover {
+    background-color: beige; 
+    color: #333;
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+/* Styles pour les icônes des réseaux sociaux */
+.social-icons {
+    font-size: 24px;
+}
+
+.icon {
+    margin-right: 20px;
+    color: #fff; 
+    transition: color 0.3s ease-in-out;
+}
+
+.iconwhatsapp {
+    color: #fff; 
+    font-size:150%;
+}
+.iconinstagram{
+    color: #fff; 
+    font-size:150%;
+}
+.iconfacebook{
+    color: #fFF;
+    font-size:150%;
+}
+
+.iconwhatsapp:hover {
+    color: #11813a; 
+}
+.iconinstagram:hover {
+    color: #a51243; 
+}
+.iconfacebook:hover {
+    color: #1a4eb8; 
+}
+
+#backToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:  rgb(255, 0, 119); 
+    color: white; 
+    width: 80px; 
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; 
+    margin-bottom: 100px;
+    text-align: center; 
+    line-height: 50px; /* Centre le texte verticalement */
+    font-size: 18px; 
+}
+
+#backToTopButton:hover {
+    background-color: #555; 
+}
+
+.menu-button{
+    display: none;
+}
+
+.header .icons div {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: b;
+    margin-left: 1.5rem;
+  }
+  
+  .header .icons div:hover {
+    color: #0eb582;
+  }
+  
+  .header #menu-btn {
+    display: none;
+  }
+
+
+
+
+  
+  @media (min-width: 300px) and (max-width: 768px){
+     .main-map {
+        flex-direction: column-reverse;
+    }
+
+    .inner-map {
+        text-align: center; 
+    }
+
+    .inner-map h2 {
+        font-size: 20px; 
+    }
+
+    .inner-map p {
+        font-size: 14px; 
+    }
+
+    .inner-map .map-btn {
+        margin-top: 20px; 
+    }
+
+    .inner-map.image-row {
+        margin-top: 20px; 
+    }
+
+    .inner-map img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .main h2 {
+        font-size: 15px;
+    width: 100%;
+    display: inline;
+    }
+    .main a {
+        margin-bottom: 15px;
+    }
+
+    .main-afri {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Réduire l'espacement entre les éléments */
+        padding: 1rem; 
+    }
+
+    .loufinek {
+        width: 100%; 
+        text-align: center; 
+        margin: 0; /* Supprimer la marge */
+    }
+
+    .loufinek img {
+        max-width: 80%; 
+        height: auto; /* Maintenir le rapport hauteur/largeur */
+    }
+
+    .loufinek h2 {
+        font-size: 14px; 
+    }
+
+    .loufinek h3 {
+        font-size: 12px;
+    }
+
+    .loufinek p {
+        font-size: 10px;
+    }
+
+    .inner-map h2{
+        font-size: 20px;
+    width: 100%;
+    display: inline;
+    margin-bottom: 30px;
+    }
+    .background-image-text h2{
+        font-size: 25px;
+    }
+    .header #menu-btn {
+      display: inline-block;
+    }
+ .form-group {
+        width: 100%; 
+        margin: 10px 0; 
+        text-align: center;
+    }
+
+    .button {
+        position: relative; 
+        width: 100%; 
+        margin: 10px 0; 
+        text-align: center
+    }
+
+    .formulaire {
+        position: static; 
+        z-index: auto; 
+    }
+
+    .icons {
+      color: #f8f8f8;
+      margin-right: 10px;
+    }
+  
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      padding: 0;
+      right: -105%;
+      width: 125px;
+      background: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1200;
+    }
+  
+    .header .navbar #close-navbar {
+      display: block;
+    }
+  
+    .header .navbar.active {
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      right: 0;
+    }
+  
+    .header .navbar a {
+      display: block;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 15px;
+    }
+  
+    .home .slide .content h3 {
+      font-size: 3rem;
+    }
+  
+    .offre-section {
+      padding: 0.5rem 5%;
+    }
+  
+    .main-offres {
+      flex-direction: column;
+      align-items: center;
+      overflow: auto;
+      max-height: unset; /* Supprimer la limite de hauteur */
+    }
+    .map-btn:hover{
+        background-color:  rgb(255, 0, 119);
+        color: #ccc;
+    }
+  
+    .intro-offre {
+      flex: 1 1 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .intro-offre h2 {
+      font-size: 20px;
+      margin-left: 0%;
+      margin-bottom: 0%;
+
+    }
+  
+    .intro-offre p {
+      font-size: 10px;
+      text-decoration: #1a4eb8;
+      margin-left: 0%;
+      margin-top: 0%;
+    }
+  
+    .cas-offre {
+      width: 80%; 
+      margin-left: 10%;
+      margin-bottom: 10px;
+    }
+  
+    .cas-offre img {
+      max-width: 100%;
+    }
+  
+    .cas-offre h2 {
+      font-size: 18px; 
+      padding: 5px 0;
+    }
+  
+    .cas-offre p {
+      font-size: 14px;
+    }
+  
+    footer {
+      padding: 1rem 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin: 1rem 0;
+    }
+  
+    .green-button {
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem;
+    }
+  
+    .social-icons {
+      margin-top: 1rem;
+    }
+  
+    .iconwhatsapp,
+    .iconinstagram,
+    .iconfacebook {
+      font-size: 3rem;
+      margin: 0.5rem;
+    }
+    .iconwhatsapp:hover {
+        color: #11813a; 
+    }
+    .iconinstagram:hover {
+        color: #a51243; 
+    }
+    .iconfacebook:hover {
+        color: #1a4eb8; 
+    }
+  
+    #backToTopButton {
+      margin-bottom: 40px;
+    }
+    #backToTopButton:hover{
+        background-color: #555;
+    }
+  }
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
